@@ -1,7 +1,8 @@
-
 ## Simple Human.io REST example, using perl5 and Mojolicious
 
 Human.io hello world using the REST callback API.
+
+It first creates a Human.io app by POST'ing to their REST API and then starts to listen for callbacks from the human.io servers.
 
 - http://human.io
 - http://human.io/docs/rest 
@@ -26,3 +27,5 @@ Set the two environment variables HIO_DEVELOPER_ID and HIO_SECRET_KEY and run th
 For example:
 
         $ HIO_DEVELOPER_ID=foo HIO_SECRET_KEY=bar ./hello_world.pl
+
+Note: By default it is private (public => 0) so you have to follow yourself to see the app.
