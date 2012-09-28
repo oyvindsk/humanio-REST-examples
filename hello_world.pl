@@ -12,6 +12,11 @@ see:
 
 =cut
 
+# Make an effort to find Mojolicious,
+# maybe it was installed with cpanm as a non-root user, and PERL5LIB is not set
+# (PERL5LIB="~/perl5/lib/perl5:$PERL5LIB)
+use lib "$ENV{HOME}/perl5/lib/perl5";
+
 use Mojolicious::Lite;
 use Mojo::UserAgent;
 use Data::Dumper;
