@@ -1,5 +1,17 @@
 #!/usr/bin/env perl
 
+=head1 Hello World
+
+Use the Mojo::UserAgent to POST necessary info to human.io and create an app.
+Then use Mojolicious::Lite to listen for incomming connections (callbacks) from human.io
+
+see: 
+    http://human.io/
+    http://human.io/docs/rest
+    https://metacpan.org/module/Mojolicious::Lite
+
+=cut
+
 use Mojolicious::Lite;
 use Mojo::UserAgent;
 use Data::Dumper;
@@ -169,7 +181,5 @@ post '/cb/' => sub {
 
 
 
-app->start;
-
-__DATA__
+app->start('daemon', '-l', 'http://*:3000');
 
