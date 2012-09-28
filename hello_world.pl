@@ -82,11 +82,11 @@ $last_res = $ua->post_form( API_URL . '/task' => {
         description             => "Hello World from the REST API",
         # thumbnail             => "URL??",         # Thumbnail to show in the app
         # items                 => "",              # list of objects?? Json?? ,
-        humans_per_item         => 1,
+        humans_per_item         => -1,
         hidden                  => 0,
         camera                  => 0,               # Limit to ppl with camera (1|0)
         auto_repeat             => 0,
-        human_can_do_multiple   => 0,               # same item or same task?
+        human_can_do_multiple   => 1,               # same item or same task?
 
         ## Limit to ppl within ..
         # latitude => 242.4234,
