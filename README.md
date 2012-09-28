@@ -5,7 +5,8 @@ Human.io hello world using the REST callback API.
 It first creates a Human.io app by POST'ing to their REST API and then starts to listen for callbacks from the human.io servers.
 
 - http://human.io
-- http://human.io/docs/rest 
+- http://human.io/docs/rest
+- http://boingboing.net/2012/09/25/humanio.html
 
 ## Usage
 
